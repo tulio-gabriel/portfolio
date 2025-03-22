@@ -9,7 +9,7 @@ import { engine } from 'express-handlebars';
 import flash from 'connect-flash';
 
 const app= express()
-const PORT=3000;
+const port=process.env.PORT || 3000;
 //config
 //sessao
 app.use(session({
@@ -57,6 +57,6 @@ app.get("/portfolio/links",(req,res)=>{
 	res.render("links");
 })
 
-app.listen(PORT, () => {
+app.listen(port, () => {
 	console.log('listening on port 3000!');
 });
