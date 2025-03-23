@@ -5,11 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 		<style>
 		*{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+.tektur-uniquifier{
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 body{
 	background: linear-gradient(90deg, rgb(29, 29, 31), rgb(67, 67, 79), rgb(90, 88, 110));
@@ -91,7 +102,7 @@ span{
 	color: rgb(79, 133, 163);
 }
 .cont{
-	background-color: white;
+	background: linear-gradient(90deg, white 50%,rgb(188, 184, 212) 100%);
 	color: black;
 	display: flex;
 	font-family: Arial, Helvetica, sans-serif;
@@ -104,7 +115,7 @@ span{
 	padding: 20px;
 	flex-direction: column;
 	width: 70%;
-	height: 70vh;
+	height: 75vh;
 	padding-top: 50px;
 }
 .ilcont{
@@ -120,7 +131,7 @@ ul,il{
 </head>
 <body>
 	<header>
-		<h2>Portfolio</h2>
+		<h2 class="tektur-uniquifier">Portfolio</h2>
 		<div class="navbar">
 			<a href="/portfolio">Main Page</a>
 			<a href="/portfolio/about">About</a>
@@ -129,9 +140,7 @@ ul,il{
 		</div>
 	</header>
 	<div class="cont">
-		<h1>ALGUNS DOS MEUS PROJETOS</h1>
-		<br>
-		<br>
+		<h1 class="tektur-uniquifier">ALGUNS PROJETOS:</h1>
 		<br>
 		<ul>
 			<li>Landing page: <br><a class="links" href="https:landing-page-digital-marketing.vercel.app">https:landing-page-digital-marketing.vercel.app</a></li>
@@ -143,6 +152,9 @@ ul,il{
 			<li>Finanças: <br><a class="links" href="https://financas-js.vercel.app">https://financas-js.vercel.app</a></li>
 			<br>
 			<li>Jogo da Velha: <br><a class="links" href="https://jogo-da-velha-mu-two.vercel.app">https://jogo-da-velha-mu-two.vercel.app</a></li>
+			<br>
+			<li>Blog App Node: <br><a class="links" href="https://blog-node-9.onrender.com">https://blog-node-9.onrender.com</a></li>
+			<br>
 		</ul>
 	</div>
 </body>
